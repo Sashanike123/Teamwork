@@ -2,7 +2,7 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout
 from instr import *
-from final_win import *
+from second _win import *
 
 class Mainwin(QWidget):
     def __init__(self):

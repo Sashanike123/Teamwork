@@ -38,4 +38,4 @@ class Mainwin(QWidget):
 
 app = QApplication([])
 mw = Mainwin()
-app.exec_()j
+app.exec_()

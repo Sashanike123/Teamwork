@@ -13,7 +13,7 @@ class Mainwin(QWidget):
         self.show()
 
     def set_appear(self):
-        self.setwindowTitle(txt_title)
+        self.setWindowTitle(txt_title)
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
     def initUI(self):
@@ -25,7 +25,7 @@ class Mainwin(QWidget):
         self.Layout_line.addWidget(self.hello_txt, alignment=Qt.AlignLeft)
         self.Layout_line.addWidget(self.instrustion, alignment=Qt.AlignLeft)
         self.Layout_line.addWidget(self.btn_next, alignment=Qt.AlignCenter)
-        self.setLayout(self.layout_line)
+        self.setLayout(self.Layout_line)
 
     def next_click(self):
         self.hide()

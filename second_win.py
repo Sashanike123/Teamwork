@@ -109,10 +109,71 @@ class TestWin(QWidget):
        global time
        time = time.addSecs(-1)
        self.text_timer.setText(time.toString("hh:mm:ss")[6:8])
-       self.text_timer.setStyleSheet("color: rgb(32,32,32)")
+       self.text_timer.setStyleSheet("color: rgb(0,0,0)")
        self.text_timer.setFont(QFont("Times", 36, QFont.Bold))
-       if time.toString("hh:mm:ss") == "00:00:00":
-           self.timer.stop()
+       if time.toString("hh:mm:ss") <= "00:00:30":
+            self.text_timer.setStyleSheet("color: rgb(0,0,255)")
+            if time.toString("hh:mm:ss") <= "00:00:29":
+                self.text_timer.setStyleSheet("color: rgb(0,0,204)")
+                if time.toString("hh:mm:ss") <= "00:00:28":
+                    self.text_timer.setStyleSheet("color: rgb(0,0,153)")
+                    if time.toString("hh:mm:ss") <= "00:00:27":
+                        self.text_timer.setStyleSheet("color: rgb(0,0,102)")
+                        if time.toString("hh:mm:ss") <= "00:00:26":
+                            self.text_timer.setStyleSheet("color: rgb(0,0,51)")
+                            if time.toString("hh:mm:ss") <= "00:00:25":
+                                self.text_timer.setStyleSheet("color: rgb(25,0,51)")
+                                if time.toString("hh:mm:ss") <= "00:00:24":
+                                    self.text_timer.setStyleSheet("color: rgb(51,0,102)")
+                                    if time.toString("hh:mm:ss") <= "00:00:23":
+                                        self.text_timer.setStyleSheet("color: rgb(76,0,153)")
+                                        if time.toString("hh:mm:ss") <= "00:00:22":
+                                            self.text_timer.setStyleSheet("color: rgb(127,0,255)")
+                                            if time.toString("hh:mm:ss") <= "00:00:21":
+                                                self.text_timer.setStyleSheet("color: rgb(153, 51, 255)")
+                                                if time.toString("hh:mm:ss") <= "00:00:20":
+                                                    self.text_timer.setStyleSheet("color: rgb(178,102,255)")
+                                                    if time.toString("hh:mm:ss") <= "00:00:19":
+                                                        self.text_timer.setStyleSheet("color: rgb(204,153,255)")
+                                                        if time.toString("hh:mm:ss") <= "00:00:18":
+                                                            self.text_timer.setStyleSheet("color: rgb(255,153,255)")
+                                                            if time.toString("hh:mm:ss") <= "00:00:17":
+                                                                self.text_timer.setStyleSheet("color: rgb(255,153,204)")
+                                                                if time.toString("hh:mm:ss") <= "00:00:16":
+                                                                    self.text_timer.setStyleSheet("color: rgb(255,153,153)")
+                                                                    if time.toString("hh:mm:ss") <= "00:00:15":
+                                                                        self.text_timer.setStyleSheet("color: rgb(255,102,102)")
+                                                                        if time.toString("hh:mm:ss") <= "00:00:14":
+                                                                            self.text_timer.setStyleSheet("color: rgb(255,51,51)")
+                                                                            if time.toString("hh:mm:ss") <= "00:00:13":
+                                                                                self.text_timer.setStyleSheet("color: rgb(255,0,0)")
+                                                                                if time.toString("hh:mm:ss") <= "00:00:12":
+                                                                                    self.text_timer.setStyleSheet("color: rgb(204,0,0)")
+                                                                                    if time.toString("hh:mm:ss") <= "00:00:11":
+                                                                                        self.text_timer.setStyleSheet("color: rgb(153,0,0)")
+                                                                                        if time.toString("hh:mm:ss") <= "00:00:10":
+                                                                                            self.text_timer.setStyleSheet("color: rgb(102,0,0)")
+                                                                                            if time.toString("hh:mm:ss") <= "00:00:09":
+                                                                                                self.text_timer.setStyleSheet("color: rgb(51,25,0)")
+                                                                                                if time.toString("hh:mm:ss") <= "00:00:08":
+                                                                                                    self.text_timer.setStyleSheet("color: rgb(102,51,0)")
+                                                                                                    if time.toString("hh:mm:ss") <= "00:00:07":
+                                                                                                        self.text_timer.setStyleSheet("color: rgb(153,76,0)")
+                                                                                                        if time.toString("hh:mm:ss") <= "00:00:06":
+                                                                                                            self.text_timer.setStyleSheet("color: rgb(204,102,0)")
+                                                                                                            if time.toString("hh:mm:ss") <= "00:00:05":
+                                                                                                                self.text_timer.setStyleSheet("color: rgb(255,128,0)")
+                                                                                                                if time.toString("hh:mm:ss") <= "00:00:04":
+                                                                                                                    self.text_timer.setStyleSheet("color: rgb(255,153,51)")
+                                                                                                                    if time.toString("hh:mm:ss") <= "00:00:03":
+                                                                                                                        self.text_timer.setStyleSheet("color: rgb(255,178,102)")
+                                                                                                                        if time.toString("hh:mm:ss") <= "00:00:02":
+                                                                                                                            self.text_timer.setStyleSheet("color: rgb(255,204,153)")
+                                                                                                                            if time.toString("hh:mm:ss") <= "00:00:01": 
+                                                                                                                                self.text_timer.setStyleSheet("color: rgb(255,255,153)")
+                                                                                                                                if time.toString("hh:mm:ss") == "00:00:00":
+                                                                                                                                    self.text_timer.setStyleSheet("color: rgb(255,255,102)")
+                                                                                                                                    self.timer.stop()
 
     def timer3Event(self):
         global time
